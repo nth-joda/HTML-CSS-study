@@ -1,0 +1,151 @@
+/* Để sử dụng css trong html externally: <link> file css to html head tag. Nếu link thành công file được link sẽ xuất hiện trong tab Sources của browser dev tool*/
+
+* {
+  /* background-color: #d4d4d4; */
+  font-size: 24px;
+  color: #212121;
+}
+.main-content {
+  background-image: url(https://st.depositphotos.com/1966617/2756/i/950/depositphotos_27565903-stock-photo-lined-paper-background.jpg);
+  background-size: 450px;
+}
+
+:root {
+  --var-txt-color: #803287;
+  --var-txt-weight: bold;
+  --var-section-txt: #9c242e;
+  --var-sub-section-txt: #3073c0;
+}
+
+#main-heading {
+  padding-top: 50px;
+  font-size: 55px;
+  font-style: bold;
+  color: #016064;
+  text-align: center;
+}
+
+.section {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--var-section-txt);
+  margin: 0px 30px;
+}
+
+.section-content {
+  margin: 0px 60px;
+}
+
+.sub-section {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--var-sub-section-txt);
+  margin: 0px 30px;
+}
+
+.sub-section-content {
+  margin: 0px 60px;
+}
+
+.italic-txt {
+  font-size: 100%;
+  font-style: italic;
+}
+
+.bold-txt {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.underline-txt {
+  font-size: 100%;
+  text-decoration: underline;
+}
+.yellow-highlight-txt {
+  background-color: #fffaa3;
+}
+.green-highlight-txt {
+  background-color: #a3ffcd;
+}
+.red-highlight-txt {
+  background-color: #ffb9b5;
+}
+.red-txt {
+  font-size: 100%;
+  color: #a31e17;
+}
+
+table.line-tb {
+  border: 1px solid black;
+}
+
+table.line-tb th {
+  border: 1px solid black;
+}
+
+table.line-tb td {
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+table.line-tb td ~ td {
+  border-left: 1px solid black;
+}
+
+ol > li {
+  font-weight: bold;
+}
+li > p {
+  font-weight: normal;
+}
+.var-txt {
+  color: var(--var-txt-color);
+  font-weight: var(--var-txt-weight);
+}
+
+.example-box::after {
+  content: attr(style);
+}
+
+.hover-el:hover {
+  color: #d62285;
+  background-color: rgba(175, 238, 59, 0.4);
+}
+
+.active-el:active {
+  color: white;
+  background-color: black;
+}
+
+.before-after-example {
+  background-color: rgb(197, 235, 126);
+}
+
+.before-after-example::before {
+  content: "created by ::before";
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-color: rgb(211, 140, 140);
+}
+
+.before-after-example::after {
+  content: "created by ::after";
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-color: rgb(178, 229, 231);
+}
+
+.first-letter-example::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.first-line-example::first-line {
+  font-weight: bold;
+}
+
+.selection-example::selection {
+  background-color: rgb(241, 177, 238);
+}

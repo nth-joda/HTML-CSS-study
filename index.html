@@ -269,7 +269,58 @@
         <div style="width:100%; height:500px; background-image: linear-gradient(0, rgba(248, 248, 0, 0.5), rgba(0, 193, 251,0.5)) ,url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png); background-size:100%; background-repeat:no-repeat" class="example-box"></div>
       </div>
 
+      <p class="sub-section">3. CSS background-size</p>
+      <div class="sub-section-content">
+        Các gia trị của <span class="italic-txt bold-txt">background-size</span>:
+        <ol>
+          <li>Absolute - px</li>
+          <li>Relative - %</li>
+          <li><span class="italic-txt">contain</span> - lấy kích thước ảnh sao cho không che/khuất 1 phần nào của ảnh</li>
+          <li><span class="italic-txt">cover</span> - lấy kích thước fit nhất với khung chứa, có thể crop 1 phần của ảnh</li>
+        </ol>
+      </div>
+      
+      <p class="sub-section">4. CSS background-origin</p>
+      <div class="sub-section-content">
+        Tương tự như <span class="italic-txt">background-clip</span>, <span class="italic-txt">background-image</span> có thể đi kèm thuộc tính <span class="italic-txt bold-txt">background-origin</span> để xác định khu vực chứa image.<br />
+        Mặc định: <span class="italic-txt bold-txt">background-origin</span> có giá trị <span class="italic-txt">padding-box</span>. background-image sẽ đổ từ padding trở vào. Có các giá trị khác như:
+        <ol>
+          <li>border-box</li>
+          <li>content-box</li>
+        </ol>
+      </div>
 
+      <p class="sub-section">5. CSS background-position</p>
+      <p class="sub-section">6. Shorthand of CSS background</p>
+
+
+    </div>
+
+    <p class="section">V. Values of CSS attribute <span class="italic-txt">position</span>:</p>
+    <div class="section-content">
+
+      <p class="sub-section">1. CSS position: Relative</p>
+      <div class="sub-section-content">
+        Lấy chính mình làm gốc tọa độ, không phụ thuộc vào các đối tượng khác.
+        <div style="position: relative; right:20px; top:20px;" class="example-box"> Làm cho element không phụ thuộc vào vị trí của elements khác. Có 4 attributes để điều hướng: top, right, bottom, left. Điều này có thể làm cho element đè lên element khác <br /></div>
+      </div>
+
+      <p class="sub-section">2. CSS position: Absolute</p>
+      <div class="sub-section-content">
+        Phụ thuộc vào thẻ cha gần nhất có thuộc tính <span class="italic-txt">position</span><br />
+        Sử dụng khi có 1 el con nằm trong el cha. mình cần di chuyển el con xung quanh el cha.<br />
+        Ex: Thẻ tím là cha, có <span class="italic-txt bold-txt">position: relative</span>. màu đen là thẻ con có <span class="italic-txt bold-txt">position: absolute</span>. Di chuyển thẻ con xuống bottom right của thẻ cha bằng att <span class="italic-txt">bottom: 10px; right: 10px.</span> 
+        <div class="box">
+          <div class="box-child"></div>
+        </div>
+      </div>
+
+      <p class="sub-section">3. CSS position: Fixed</p>
+      <div class="sub-section-content">
+        Ứng dụng: Có những trang infinite-scroll, heading-tab sẽ được cố định. (Vị trí ko bị thay đổi khi scroll trình duyệt)
+      </div>
+
+      <p class="sub-section">4. CSS position: Sticky</p>
     </div>
   </body>
 </html>

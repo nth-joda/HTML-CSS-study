@@ -29,7 +29,7 @@
   font-size: 40px;
   font-weight: bold;
   color: var(--var-section-txt);
-  margin: 0px 30px;
+  margin: 10px 30px;
 }
 
 .section-content {
@@ -50,16 +50,19 @@
 .italic-txt {
   font-size: 100%;
   font-style: italic;
+  color: inherit;
 }
 
 .bold-txt {
   font-size: 100%;
   font-weight: bold;
+  color: inherit;
 }
 
 .underline-txt {
   font-size: 100%;
   text-decoration: underline;
+  color: inherit;
 }
 .yellow-highlight-txt {
   background-color: #fffaa3;
@@ -107,6 +110,12 @@ li > p {
   content: attr(style);
 }
 
+.example-box {
+  background-color: rgba(136, 175, 177, 0.6);
+  height: 100px;
+  width: 900px;
+}
+
 .hover-el:hover {
   color: #d62285;
   background-color: rgba(175, 238, 59, 0.4);
@@ -148,4 +157,20 @@ li > p {
 
 .selection-example::selection {
   background-color: rgb(241, 177, 238);
+}
+
+.box {
+  background-color: rgba(62, 64, 179, 0.5);
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.box-child {
+  background-color: rgba(49, 53, 49, 0.5);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

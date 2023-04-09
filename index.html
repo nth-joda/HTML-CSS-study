@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<body>
   <head>
     <title>F8 - HTML CSS | Zero to Hero</title>
     <meta charset="utf-8" />
@@ -11,10 +11,9 @@
     </style>
     <link rel="stylesheet" href="assets\css\style.css" />
   </head>
-
   <div class="main-content">
     <p id="main-heading">HTML CSS</p>
-    
+
     <p class="section">I. Các thẻ thường dùng trong html:</p>
     <div class="section-content">
       <ol>
@@ -28,7 +27,7 @@
         <li>button</li>
       </ol>
     </div>
-    
+
     <p class="section">II. Làm quen CSS</p>
     <div class="section-content">
       <p class="sub-section">1. Các cách sử dụng CSS trong HTML:</p>
@@ -42,14 +41,16 @@
           <!--Thêm css inline thông qua attribute style="..." -->
         </ol>
       </div>
-      
-      <p class="sub-section">2. CSS selectors</h2>
+
+      <p class="sub-section">2. CSS selectors</p>
       <div class="sub-section-content">
         <ol>
           <li id="id-heading">ID</li>
           <li>Class</li>
-          <p class="note">
-            <span class="italic-txt bold-txt underline-txt yellow-highlight-txt">Summary:</span>
+          <div class="note">
+            <span class="italic-txt bold-txt underline-txt yellow-highlight-txt"
+              >Summary:</span
+            >
             <table class="line-tb">
               <thead>
                 <th>Selector</th>
@@ -65,12 +66,19 @@
                 <tr>
                   <td>.class1.class2</td>
                   <td>.name1.name2</td>
-                  <td>Chọn tất cả thẻ có cả name1 và name2 trong thuộc tính class</td>
+                  <td>
+                    Chọn tất cả thẻ có cả name1 và name2 trong thuộc tính class
+                  </td>
                 </tr>
                 <tr>
-                  <td>.class1<span class="red-highlight-txt"> </span>.class2</td>
+                  <td>
+                    .class1<span class="red-highlight-txt"> </span>.class2
+                  </td>
                   <td>.name1 .name2</td>
-                  <td>Chọn các thẻ có class="name2" và thẻ đó là con của element có class="name1"</td>
+                  <td>
+                    Chọn các thẻ có class="name2" và thẻ đó là con của element
+                    có class="name1"
+                  </td>
                 </tr>
                 <tr>
                   <td>*</td>
@@ -88,19 +96,23 @@
                   <td>Chọn tất cả các thẻ dic có class="box</td>
                 </tr>
                 <tr>
-                  <td>element<span class="red-highlight-txt">, </span>element</td>
+                  <td>
+                    element<span class="red-highlight-txt">, </span>element
+                  </td>
                   <td>h2, div</td>
                   <td>Chọn các thẻ h2 hoặc div</td>
                 </tr>
                 <tr>
-                  <td>element<span class="red-highlight-txt"> </span>element</td>
+                  <td>
+                    element<span class="red-highlight-txt"> </span>element
+                  </td>
                   <td>div p</td>
                   <td>Chọn các thẻ p là con/cháu của thẻ div</td>
                 </tr>
                 <tr>
                   <td>element > element</td>
                   <td>div > p</td>
-                  <td>Chọn các thẻ p là con trực tiếp của thẻ div </td>
+                  <td>Chọn các thẻ p là con trực tiếp của thẻ div</td>
                 </tr>
                 <tr>
                   <td>element + element</td>
@@ -116,22 +128,30 @@
             </table>
             <p>Ví dụ:</p>
             <ul>
-              <li>Các thẻ như h1-h6, p, ul,... sẽ có margin và padding mặc định. Để loại bỏ, ở đầu trang main.css:<br />
+              <li>
+                Các thẻ như h1-h6, p, ul,... sẽ có margin và padding mặc định.
+                Để loại bỏ, ở đầu trang main.css:<br />
                 *{ <br />
-                <span class="red-txt" style="padding-left:40px">padding:</span> 0; <br />
-                <span class="red-txt" style="padding-left:40px">margin:</span> 0; <br />
+                <span class="red-txt" style="padding-left: 40px">padding:</span>
+                0; <br />
+                <span class="red-txt" style="padding-left: 40px">margin:</span>
+                0; <br />
                 }
-              </li> 
+              </li>
             </ul>
-          </p>
+          </div>
         </ol>
       </div>
-      
+
       <p class="sub-section">3. CSS Priority trong HTML</p>
       <div class="sub-section-content">
         <ol>
-          <li>Internal vs External:
-            <p>Không có sự ưu tiên, cái nào được define sau thì overwrite cái trước đó</p>
+          <li>
+            Internal vs External:
+            <p>
+              Không có sự ưu tiên, cái nào được define sau thì overwrite cái
+              trước đó
+            </p>
           </li>
           <li>Inline - pri=1000</li>
           <li>#id - pri=100</li>
@@ -142,10 +162,16 @@
           <li>!important - pri=99999999</li>
         </ol>
       </div>
-      
+
       <p class="sub-section">4. CSS Variables</p>
       <div class="sub-section-content">
-        <p>Sử dụng lớp giả <span class="italic-txt green-highlight-txt var-txt">:root{ ... }</span> trong css</p>
+        <p>
+          Sử dụng lớp giả
+          <span class="italic-txt green-highlight-txt var-txt"
+            >:root{ ... }</span
+          >
+          trong css
+        </p>
       </div>
 
       <p class="sub-section">5. Units in CSS</p>
@@ -167,12 +193,29 @@
             giá trị phụ thuộc các thẻ khác
             <ul>
               <li><span class="bold-txt"> % </span>- phụ thuộc vào thẻ cha</li>
-              <div style="height:100px; width:50%; background-color:red;">height=100px, width=50%(li)</div>
-              <li><span class="bold-txt"> rem </span> - phụ thuộc vào thẻ <span class="green-highlight-txt"> html </span>; ưu tiên dùng hơn em vì dễ kiểm soát</li>
-              <li><span class="bold-txt"> em </span> - phụ thuộc vào thẻ có thuộc tính cận huyết thống với nó nhất</li>
-              <li><span class="bold-txt"> vw </span> - viewport width: 1vw = 1%(viewport_width)</li>
-              <li><span class="bold-txt"> vh </span>- viewport height: 1vh = 1%(viewport_height) </li>
-              <div style="width: 10vw; height:5vh; background-color:red">width: 10vw; height:5vh</div>
+              <div style="height: 100px; width: 50%; background-color: red">
+                height=100px, width=50%(li)
+              </div>
+              <li>
+                <span class="bold-txt"> rem </span> - phụ thuộc vào thẻ
+                <span class="green-highlight-txt"> html </span>; ưu tiên dùng
+                hơn em vì dễ kiểm soát
+              </li>
+              <li>
+                <span class="bold-txt"> em </span> - phụ thuộc vào thẻ có thuộc
+                tính cận huyết thống với nó nhất
+              </li>
+              <li>
+                <span class="bold-txt"> vw </span> - viewport width: 1vw =
+                1%(viewport_width)
+              </li>
+              <li>
+                <span class="bold-txt"> vh </span>- viewport height: 1vh =
+                1%(viewport_height)
+              </li>
+              <div style="width: 10vw; height: 5vh; background-color: red">
+                width: 10vw; height:5vh
+              </div>
               vw & vh thường dùng để chia layout
               <li>vmin</li>
               <li>vmax</li>
@@ -182,21 +225,58 @@
           </div>
         </ol>
       </div>
-    
+
       <p class="sub-section">6. CSS functions</p>
       <div class="sub-section-content">
         <ul>
-          <li><span class="bold-txt">var()</span> - dùng để lấy giá trị của biến css --var-...</li>
-          <li><span class="bold-txt">linear-gradient()</span> - dùng để set giá trị cho attribute <span class="italic-txt">background-image:</span> </li>
-          <div style="background-image: linear-gradient(to right, red, yellow); width:100vw; height:10vh;" class="example-box"></div>
+          <li>
+            <span class="bold-txt">var()</span> - dùng để lấy giá trị của biến
+            css --var-...
+          </li>
+          <li>
+            <span class="bold-txt">linear-gradient()</span> - dùng để set giá
+            trị cho attribute <span class="italic-txt">background-image:</span>
+          </li>
+          <div
+            style="
+              background-image: linear-gradient(to right, red, yellow);
+              width: 100vw;
+              height: 10vh;
+            "
+            class="example-box"
+          ></div>
           <li><span class="bold-txt">rgba()</span> - color with opacity</li>
-          <div style="background-color:rgba(0,0,255,0.1); width:100vw; height:3vh" class="example-box"></div>
-          <div style="background-color:rgba(0,0,255,0.3); width:100vw; height:3vh" class="example-box"></div>
-          <div style="background-color:rgba(0,0,255,0.7); width:100vw; height:3vh" class="example-box"></div>
-          
+          <div
+            style="
+              background-color: rgba(0, 0, 255, 0.1);
+              width: 100vw;
+              height: 3vh;
+            "
+            class="example-box"
+          ></div>
+          <div
+            style="
+              background-color: rgba(0, 0, 255, 0.3);
+              width: 100vw;
+              height: 3vh;
+            "
+            class="example-box"
+          ></div>
+          <div
+            style="
+              background-color: rgba(0, 0, 255, 0.7);
+              width: 100vw;
+              height: 3vh;
+            "
+            class="example-box"
+          ></div>
+
           <li><span class="bold-txt">rgb()</span> - color</li>
           <li><span class="bold-txt">calc()</span> - thực hiện phép tính</li>
-          <li><span class="bold-txt">attr()</span> - attribute , thường sử dụng với lớp giả</li>
+          <li>
+            <span class="bold-txt">attr()</span> - attribute , thường sử dụng
+            với lớp giả
+          </li>
           Xem ví dụ class="example-box" ở file css
         </ul>
       </div>
@@ -204,86 +284,212 @@
       <p class="sub-section">7. CSS pseudo-classes - lớp giả</p>
       <div class="sub-section-content">
         <ul>
-          <li><span class="bold-txt">:root</span> - tham chiếu đến phần tử gốc: html; thường dùng để khai báo biến css</li>
-          <li class="hover-el"><span class="bold-txt">:hover</span> - các thuộc tính của element có lớp gải là :hover chỉ được kích hoạt khi có chuột rê vào</li>
-          <li class="active-el"><span class="bold-txt">:active</span> - như hover nhưng trigger bởi click-down chuột </li>
-          <li><span class="bold-txt">:first-child</span>  </li>
-          <li><span class="bold-txt">:last-child</span>  </li>
+          <li>
+            <span class="bold-txt">:root</span> - tham chiếu đến phần tử gốc:
+            html; thường dùng để khai báo biến css
+          </li>
+          <li class="hover-el">
+            <span class="bold-txt">:hover</span> - các thuộc tính của element có
+            lớp gải là :hover chỉ được kích hoạt khi có chuột rê vào
+          </li>
+          <li class="active-el">
+            <span class="bold-txt">:active</span> - như hover nhưng trigger bởi
+            click-down chuột
+          </li>
+          <li><span class="bold-txt">:first-child</span></li>
+          <li><span class="bold-txt">:last-child</span></li>
         </ul>
       </div>
 
-      <p class="sub-section">8. CSS pseudo-elements - phần tử giả: tạo ra phần tử mà ko cần html, chỉ cần css</p>
+      <p class="sub-section">
+        8. CSS pseudo-elements - phần tử giả: tạo ra phần tử mà ko cần html, chỉ
+        cần css
+      </p>
       <div class="sub-section-content">
         <ul>
           <li><span class="bold-txt">::before</span> - tạo ra 1 first child</li>
           <li><span class="bold-txt">::after</span> - tạo ra 1 last child</li>
           <div class="before-after-example">
-            <span style="background-color: blue; color: white; margin-left: 25px"> phần tử 1 tạo bằng html code</span><br />
-            <span style="background-color: blue; color: white; margin-left: 25px"> phần tử 2 tạo bằng html code</span><br />
-            <span style="background-color: blue; color: white; margin-left: 25px"> phần tử 3 tạo bằng html code</span><br />
-            <span style="background-color: blue; color: white; margin-left: 25px">xem ví dụ ở class="before-after-example"</span>
+            <span
+              style="background-color: blue; color: white; margin-left: 25px"
+            >
+              phần tử 1 tạo bằng html code</span
+            ><br />
+            <span
+              style="background-color: blue; color: white; margin-left: 25px"
+            >
+              phần tử 2 tạo bằng html code</span
+            ><br />
+            <span
+              style="background-color: blue; color: white; margin-left: 25px"
+            >
+              phần tử 3 tạo bằng html code</span
+            ><br />
+            <span
+              style="background-color: blue; color: white; margin-left: 25px"
+              >xem ví dụ ở class="before-after-example"</span
+            >
           </div>
-          <li><span class="bold-txt">::first-letter</span> - <div class="first-letter-example">tác động vào kí tự đầu tiên của nội dung của 1 element</div> </li>
-          <li><span class="bold-txt">::first-line</span> - <div class="first-line-example">
-            <p>tác động vào dòng đầu tiên của 1 paragraph có nhiều dòng - dòng 1 </p>
-            <p>tác động vào dòng đầu tiên của 1 paragraph có nhiều dòng - dòng 2 </p>
-            <p>tác động vào dòng đầu tiên của 1 paragraph có nhiều dòng - dòng 3 </p>
-          </div></li>
-          <li><span class="bold-txt">::selection</span> - <div class="selection-example">tác động khi bị phủ khói </div> </li>
+          <li>
+            <span class="bold-txt">::first-letter</span> -
+            <div class="first-letter-example">
+              tác động vào kí tự đầu tiên của nội dung của 1 element
+            </div>
+          </li>
+          <li>
+            <span class="bold-txt">::first-line</span> -
+            <div class="first-line-example">
+              <p>
+                tác động vào dòng đầu tiên của 1 paragraph có nhiều dòng - dòng
+                1
+              </p>
+              <p>
+                tác động vào dòng đầu tiên của 1 paragraph có nhiều dòng - dòng
+                2
+              </p>
+              <p>
+                tác động vào dòng đầu tiên của 1 paragraph có nhiều dòng - dòng
+                3
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="bold-txt">::selection</span> -
+            <div class="selection-example">tác động khi bị phủ khói</div>
+          </li>
         </ul>
       </div>
-
     </div>
-
 
     <p class="section">III. Padding - Border - Margin</p>
     <div class="section-content">
       <ol>
-        <li>Padding: <span>Phần đệm cho nội dung chính - làm tăng kích cỡ element</span></li>
-        <li>Border: <span>Phần viền cho element - làm tăng kích cỡ element</span></li>
-        <div style="width:900px; height:200px; padding: 20px 15px 12px 8px; border-width: 10px 8px 5px 2px; border-style:solid; border-color: rgb(26, 22, 22); background-color: rgb(250, 196, 196)" class="example-box"></div>
-        <li>Margin: <span>Khoảng cách với những element xung quanh - ko thay đổi kích cỡ bản thân</span></li>
+        <li>
+          Padding:
+          <span>Phần đệm cho nội dung chính - làm tăng kích cỡ element</span>
+        </li>
+        <li>
+          Border: <span>Phần viền cho element - làm tăng kích cỡ element</span>
+        </li>
+        <div
+          style="
+            width: 900px;
+            height: 200px;
+            padding: 20px 15px 12px 8px;
+            border-width: 10px 8px 5px 2px;
+            border-style: solid;
+            border-color: rgb(26, 22, 22);
+            background-color: rgb(250, 196, 196);
+          "
+          class="example-box"
+        ></div>
+        <li>
+          Margin:
+          <span
+            >Khoảng cách với những element xung quanh - ko thay đổi kích cỡ bản
+            thân</span
+          >
+        </li>
       </ol>
-      Để tránh làm thay đổi kích thước do dùng padding và border: sử dụng thuộc tính <span class="bold-txt italic-txt green-highlight-txt" > box-sizing: border-box</span> . Khi đó thuộc tính <span class="bold-txt italic-txt" >width, height</span> ám chỉ kích thước đã cộng padding và border.
-
+      Để tránh làm thay đổi kích thước do dùng padding và border: sử dụng thuộc
+      tính
+      <span class="bold-txt italic-txt green-highlight-txt">
+        box-sizing: border-box</span
+      >
+      . Khi đó thuộc tính
+      <span class="bold-txt italic-txt">width, height</span> ám chỉ kích thước
+      đã cộng padding và border.
     </div>
-
 
     <p class="section">IV. Attributes about background</p>
     <div class="section-content">
       <p class="sub-section">1. CSS background-clip</p>
       <div class="sub-section-content">
-        Xác định background gồm những phần nào. Mặc định, <span class="italic-txt"> border-box</span>: từ border vào content.<br />
+        Xác định background gồm những phần nào. Mặc định,
+        <span class="italic-txt"> border-box</span>: từ border vào content.<br />
         Có các giá trị khác như:
         <ul>
-          <li> <span class="italic-txt bold-txt"> padding-box</span> : chỉ tính từ padding vào content (bỏ phần border)</li>
-          <div style="width:100%; height:100px; padding:20px; box-sizing:border-box; border:10px dashed #fff; background-color: rgb(236, 185, 185); background-clip:padding-box" class="example-box"></div>
-          <li> <span class="italic-txt bold-txt"> content-box</span> : chỉ tính từ content vào content (bỏ phần border, padding)</li>
-          <div style="width:100%; height:100px; padding:20px; box-sizing:border-box; border:10px dashed #fff; background-color: rgb(236, 185, 185); background-clip:content-box" class="example-box"></div>
-
+          <li>
+            <span class="italic-txt bold-txt"> padding-box</span> : chỉ tính từ
+            padding vào content (bỏ phần border)
+          </li>
+          <div
+            style="
+              width: 100%;
+              height: 100px;
+              padding: 20px;
+              box-sizing: border-box;
+              border: 10px dashed #fff;
+              background-color: rgb(236, 185, 185);
+              background-clip: padding-box;
+            "
+            class="example-box"
+          ></div>
+          <li>
+            <span class="italic-txt bold-txt"> content-box</span> : chỉ tính từ
+            content vào content (bỏ phần border, padding)
+          </li>
+          <div
+            style="
+              width: 100%;
+              height: 100px;
+              padding: 20px;
+              box-sizing: border-box;
+              border: 10px dashed #fff;
+              background-color: rgb(236, 185, 185);
+              background-clip: content-box;
+            "
+            class="example-box"
+          ></div>
         </ul>
       </div>
 
       <p class="sub-section">2. CSS background-image</p>
       <div class="sub-section-content">
-        <div style="width:100%; height:500px; background-image: linear-gradient(0, rgba(248, 248, 0, 0.5), rgba(0, 193, 251,0.5)) ,url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png); background-size:100%; background-repeat:no-repeat" class="example-box"></div>
+        <div
+          style="
+            width: 100%;
+            height: 500px;
+            background-image: linear-gradient(
+                0,
+                rgba(248, 248, 0, 0.5),
+                rgba(0, 193, 251, 0.5)
+              ),
+              url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+          "
+          class="example-box"
+        ></div>
       </div>
 
       <p class="sub-section">3. CSS background-size</p>
       <div class="sub-section-content">
-        Các gia trị của <span class="italic-txt bold-txt">background-size</span>:
+        Các gia trị của
+        <span class="italic-txt bold-txt">background-size</span>:
         <ol>
           <li>Absolute - px</li>
           <li>Relative - %</li>
-          <li><span class="italic-txt">contain</span> - lấy kích thước ảnh sao cho không che/khuất 1 phần nào của ảnh</li>
-          <li><span class="italic-txt">cover</span> - lấy kích thước fit nhất với khung chứa, có thể crop 1 phần của ảnh</li>
+          <li>
+            <span class="italic-txt">contain</span> - lấy kích thước ảnh sao cho
+            không che/khuất 1 phần nào của ảnh
+          </li>
+          <li>
+            <span class="italic-txt">cover</span> - lấy kích thước fit nhất với
+            khung chứa, có thể crop 1 phần của ảnh
+          </li>
         </ol>
       </div>
-      
+
       <p class="sub-section">4. CSS background-origin</p>
       <div class="sub-section-content">
-        Tương tự như <span class="italic-txt">background-clip</span>, <span class="italic-txt">background-image</span> có thể đi kèm thuộc tính <span class="italic-txt bold-txt">background-origin</span> để xác định khu vực chứa image.<br />
-        Mặc định: <span class="italic-txt bold-txt">background-origin</span> có giá trị <span class="italic-txt">padding-box</span>. background-image sẽ đổ từ padding trở vào. Có các giá trị khác như:
+        Tương tự như <span class="italic-txt">background-clip</span>,
+        <span class="italic-txt">background-image</span> có thể đi kèm thuộc
+        tính <span class="italic-txt bold-txt">background-origin</span> để xác
+        định khu vực chứa image.<br />
+        Mặc định: <span class="italic-txt bold-txt">background-origin</span> có
+        giá trị <span class="italic-txt">padding-box</span>. background-image sẽ
+        đổ từ padding trở vào. Có các giá trị khác như:
         <ol>
           <li>border-box</li>
           <li>content-box</li>
@@ -292,24 +498,40 @@
 
       <p class="sub-section">5. CSS background-position</p>
       <p class="sub-section">6. Shorthand of CSS background</p>
-
-
     </div>
 
-    <p class="section">V. Values of CSS attribute <span class="italic-txt">position</span>:</p>
+    <p class="section">
+      V. Values of CSS attribute <span class="italic-txt">position</span>: Xác
+      định vị trí hiển thị của element
+    </p>
     <div class="section-content">
-
       <p class="sub-section">1. CSS position: Relative</p>
       <div class="sub-section-content">
         Lấy chính mình làm gốc tọa độ, không phụ thuộc vào các đối tượng khác.
-        <div style="position: relative; right:20px; top:20px;" class="example-box"> Làm cho element không phụ thuộc vào vị trí của elements khác. Có 4 attributes để điều hướng: top, right, bottom, left. Điều này có thể làm cho element đè lên element khác <br /></div>
+        <div
+          style="position: relative; right: 20px; top: 20px"
+          class="example-box"
+        >
+          Làm cho element
+          <span class="bold-txt"
+            >không phụ thuộc vào vị trí của elements khác</span
+          >. Có 4 attributes để điều hướng: top, right, bottom, left. Điều này
+          có thể làm cho element <span class="bold-txt">đè lên</span> element
+          khác <br />
+        </div>
       </div>
 
       <p class="sub-section">2. CSS position: Absolute</p>
       <div class="sub-section-content">
-        Phụ thuộc vào thẻ cha gần nhất có thuộc tính <span class="italic-txt">position</span><br />
-        Sử dụng khi có 1 el con nằm trong el cha. mình cần di chuyển el con xung quanh el cha.<br />
-        Ex: Thẻ tím là cha, có <span class="italic-txt bold-txt">position: relative</span>. màu đen là thẻ con có <span class="italic-txt bold-txt">position: absolute</span>. Di chuyển thẻ con xuống bottom right của thẻ cha bằng att <span class="italic-txt">bottom: 10px; right: 10px.</span> 
+        Phụ thuộc vào <span class="bold-txt">thẻ cha</span> gần nhất có thuộc
+        tính <span class="italic-txt">position</span><br />
+        Sử dụng khi có 1 el con nằm trong el cha. mình cần di chuyển el con xung
+        quanh el cha.<br />
+        Ex: Thẻ tím là cha, có
+        <span class="italic-txt bold-txt">position: relative</span>. màu đen là
+        thẻ con có <span class="italic-txt bold-txt">position: absolute</span>.
+        Di chuyển thẻ con xuống bottom right của thẻ cha bằng att
+        <span class="italic-txt">bottom: 10px; right: 10px.</span>
         <div class="box">
           <div class="box-child"></div>
         </div>
@@ -317,10 +539,174 @@
 
       <p class="sub-section">3. CSS position: Fixed</p>
       <div class="sub-section-content">
-        Ứng dụng: Có những trang infinite-scroll, heading-tab sẽ được cố định. (Vị trí ko bị thay đổi khi scroll trình duyệt)
+        Ứng dụng: Có những trang infinite-scroll, heading-tab sẽ được
+        <span class="bold-txt">cố định</span>. (Vị trí ko bị thay đổi khi scroll
+        trình duyệt)
       </div>
 
       <p class="sub-section">4. CSS position: Sticky</p>
     </div>
-  </body>
-</html>
+
+    <p class="section">
+      VI. Values of CSS attribute <span class="italic-txt">display</span>:
+    </p>
+    <div class="section-content">
+      <table class="display-property">
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Miêu tả</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr></tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>inline</td>
+            <td>
+              kích thước gói gọn nội dung;
+              <span class="bold-txt italic-txt">height, weight</span> ko có tác
+              dụng. Ví dụ tag <span class="bold-txt">span</span>
+            </td>
+          </tr>
+          <tr>
+            <td>block</td>
+            <td>
+              bắt đầu ở dòng mới, chiếm tất cả chiều rộng. Ví dụ tag
+              <span class="bold-txt">p</span>
+            </td>
+          </tr>
+          <tr>
+            <td>contents</td>
+            <td>Loại bỏ container. Nâng cấp children của thẻ đó lên 1 cấp</td>
+          </tr>
+          <tr>
+            <td><span class="bold-txt">flex</span></td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <td><span class="bold-txt">grid</span></td>
+            <td>...</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="sub-section">
+        1. CSS display:
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+          >flex</a
+        >
+      </p>
+
+      <p class="sub-sub-section">a. Properties for Parent `flex-container`:</p>
+      <table class="display-property">
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Miêu tả</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr></tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>display</td>
+            <td>`flex` hoặc `inline-flex`</td>
+          </tr>
+          <tr>
+            <td>flex-direction</td>
+            <td>
+              Thứ tự hiển thị của các items; flex-direction: row | row-reverse |
+              column | column-reverse;
+            </td>
+          </tr>
+          <tr>
+            <td>flex-wrap</td>
+            <td>
+              flex-wrap: nowrap | wrap | wrap-reverse; Mặc định, sẽ cố gắn nhét
+              các item vào 1 line (no-wrap)
+            </td>
+          </tr>
+          <tr>
+            <td>flex-flow</td>
+            <td>
+              Viết tắt của `direction` và `wrap`. Ví dụ: flex-flow: column wrap;
+            </td>
+          </tr>
+          <tr>
+            <td>justify-content</td>
+            <td>
+              justify-content: flex-start | flex-end | center | space-between |
+              space-around | space-evenly | start | end | left | right ... +
+              safe | unsafe;
+              <p style="font-size: 18px; font-weight: bold">
+                Align (free spaces between) items theo trục chính
+                `flex-direction`
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>align-items</td>
+            <td>
+              align-items: stretch | flex-start | flex-end | center | baseline |
+              first baseline | last baseline | start | end | self-start |
+              self-end + ... safe | unsafe;
+              <p style="font-size: 18px; font-weight: bold">
+                Align (free spaces between) items theo trục phụ
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>align-content</td>
+            <td>
+              align-content: flex-start | flex-end | center | space-between |
+              space-around | space-evenly | stretch | start | end | baseline |
+              first baseline | last baseline + ... safe | unsafe;
+              <p style="font-size: 18px; font-weight: bold">
+                Các lines align (free spaces between) items theo trục phụ
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>gap, row-gap, column-gap</td>
+            <td>Khoảng cách giữa các items</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="sub-sub-section">a. Properties for Children `flex-item`:</p>
+      <table class="display-property">
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>Miêu tả</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr></tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>order</td>
+            <td>Thứ tự vị trí trong parent. Default: 0</td>
+          </tr>
+          <tr>
+            <td>flex-grow</td>
+            <td>
+              flex-grow: 4; Khoảng không gian của item có thể mở rộng nếu cần
+              thiết. Ví dụ trên item này có thể lớn gấp 4 lần item bthg.
+            </td>
+          </tr>
+          <tr>
+            <td>align-self</td>
+            <td>
+              align-self: auto | flex-start | flex-end | center | baseline |
+              stretch; Overide lại thuộc tính `justify-content` của Parent;
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
